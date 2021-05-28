@@ -7,10 +7,6 @@ let input=document.querySelector("input")
 let inputSpan=document.querySelector(".input-span")
 let starbucksReward=document.querySelector(".starbucks-reward")
 let footerDiv=document.querySelectorAll(".footer-div")
-let details=document.querySelector(".details")
-let toggleDiv=document.querySelectorAll(".toggleDiv")
-let footerBold=document.querySelector(".footer-bold")
-let angleDown=document.querySelector(".fa-angle-down")
 
 
 input.addEventListener("input",function(){
@@ -75,3 +71,14 @@ document.addEventListener("scroll",()=>{
         starbucksReward.style=""
     }  
 })
+
+function showDetails(){
+    this.classList.toggle("active")
+
+
+}
+
+footerDiv.forEach(div =>{
+    div.addEventListener("click",showDetails)
+})
+

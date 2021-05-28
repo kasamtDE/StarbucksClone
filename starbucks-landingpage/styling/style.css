@@ -1015,6 +1015,7 @@ body footer .footer-container .footer-div {
   color: rgba(0, 0, 0, 0.6);
   font-size: 16px;
   margin-bottom: 1rem;
+  z-index: 2;
 }
 
 body footer .footer-container .footer-div i {
@@ -1042,25 +1043,75 @@ body footer .footer-container .footer-div:hover {
   cursor: pointer;
 }
 
+body footer .footer-container .footer-div .details-toggle {
+  display: none;
+}
+
 body footer .footer-container .footer-div .details {
   display: none;
 }
 
 body footer .footer-container .footer-div .footer-bold {
   position: relative;
-  width: 90%;
+  width: 100%;
+}
+
+body footer .footer-container .footer-div .footer-bold .toggleDiv {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  height: 0px;
 }
 
 body footer .footer-container .footer-div .footer-bold p {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 10;
 }
 
-body footer .footer-container .footer-div .toggleDiv {
-  bottom: 0;
-  position: relative;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+body footer .footer-container .footer-div .footer-bold i {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body footer .footer-container .footer-div.active .footer-bold .toggleDiv {
+  height: 250px;
+  margin: 1rem 0;
+}
+
+body footer .footer-container .footer-div.active .footer-bold .toggleDiv .details-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+body footer .footer-container .footer-div.active .footer-bold .toggleDiv .details-toggle p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+body footer .footer-container .footer-div.active .footer-bold .toggleDiv .details-toggle p:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+body footer .footer-container .footer-div.active .footer-bold i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 body footer .social-media {
