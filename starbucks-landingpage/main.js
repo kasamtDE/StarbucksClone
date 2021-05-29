@@ -7,6 +7,7 @@ let input=document.querySelector("input")
 let inputSpan=document.querySelector(".input-span")
 let starbucksReward=document.querySelector(".starbucks-reward")
 let footerDiv=document.querySelectorAll(".footer-div")
+let sections=document.querySelectorAll("section")
 
 
 input.addEventListener("input",function(){
@@ -31,6 +32,8 @@ input.addEventListener("input",function(){
 hamburger.addEventListener("click",function(){
     navbar.classList.toggle("active")
     body.classList.toggle("body-dark")
+
+    
 })
 
 choice.addEventListener("click",function(e){

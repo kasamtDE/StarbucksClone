@@ -35,6 +35,7 @@ body header nav {
   width: 100%;
   height: 100px;
   font-weight: 700;
+  background-color: white;
 }
 
 body header nav .logo-container .logo {
@@ -1772,7 +1773,16 @@ body footer .social-media P {
             transform: rotate(45deg);
     top: 6px;
   }
+  body header nav .navbar.active + .hamburger {
+    position: fixed;
+    right: 35px;
+    top: 40px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
   body header nav .hamburger {
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1793,12 +1803,20 @@ body footer .social-media P {
   body main .section-1 .banner a {
     text-decoration: underline;
   }
-  .body-dark {
-    background: rgba(0, 0, 0, 0.6);
-  }
-  .body-dark .starbucks-reward {
-    background: rgba(0, 0, 0, 0.6);
-  }
+}
+
+.body-dark {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.body-dark .starbucks-reward {
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+}
+
+.body-dark main {
+  -webkit-filter: brightness(0.4);
+          filter: brightness(0.4);
 }
 
 @media screen and (max-width: 499px) {
