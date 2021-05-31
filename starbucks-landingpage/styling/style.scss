@@ -1252,6 +1252,10 @@ body{
                         margin-right: auto;
                         height: 20px;
                         margin-bottom: 2rem;
+                        .toggleDiv{
+                            display: none;
+                        }
+                        
                     }
                     i{
                         display: none;
@@ -1276,7 +1280,9 @@ body{
                     &:hover{
                         cursor: auto;
                     }
+                    
                 }
+                
             }
             .social-media{
                 min-height: 200px;

@@ -1587,6 +1587,9 @@ body footer .social-media P {
     height: 20px;
     margin-bottom: 2rem;
   }
+  body footer .footer-container .footer-div .footer-bold .toggleDiv {
+    display: none;
+  }
   body footer .footer-container .footer-div i {
     display: none;
   }

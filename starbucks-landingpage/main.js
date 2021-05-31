@@ -7,6 +7,7 @@ let input=document.querySelector("input")
 let inputSpan=document.querySelector(".input-span")
 let starbucksReward=document.querySelector(".starbucks-reward")
 let footerDiv=document.querySelectorAll(".footer-div")
+let sections=document.querySelectorAll("section")
 
 
 input.addEventListener("input",function(){
